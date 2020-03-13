@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+        #logo{
+            width: 200px;
+        }
+        th{
+            color: white;
+        }
+        body{
+            font-family: arial;
+            font-weight: bold;
+        }
+    </style>
+    <title>H.S.J.T.</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <img src="img/unnamed.png" id="logo" class="rounded mx-auto d-block" alt="">
+                <p class="text-center"><span id="h_nome"></span></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <h1 class="titulo"> Médicos de Plantão  </h1>
+            </div>
+        </div>  
+        <div class="row">  
+            <div class="col-sm">
+                <table class="table table-sm table-primary" id="tbMedico">
+                    <thead>
+                    <tr>
+                    <th class="bg-primary">COD.FUNC.</th>
+                    <th class="bg-primary">NOME</th>
+                    <th class="bg-primary">CPF</th>
+                    <th class="bg-primary">ESPECIALIDADE</th>
+                    <th class="bg-primary">CRM</th>
+                    </tr>
+                    </thead>
+                    <tbody id="tbMedico">
+							
+					</tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm">
+                <h1 class="titulo"> Enfermeiros de Plantão</h1>
+            </div>
+        </div>  
+        <div class="row">  
+            <div class="col-sm">
+                <table class="table table-sm table-success" id="tbEnfermeiro">
+                    <thead>
+                    <tr>
+                    <th class="bg-success">COD. FUNC.</th>
+                    <th class="bg-success">NOME</th>
+                    <th class="bg-success">CPF</th>
+                    <th class="bg-success">COREN</th>
+                    </tr>
+                    </thead>
+                    <tbody id="tbEnfermeiro">
+							
+					</tbody>
+                </table>
+            </div>
+        </div>
+    
+
+        <div class="row">
+            <div class="col-sm">
+                <h1 class="titulo"> Lista de Pacientes</h1>
+            </div>
+        </div>  
+        <div class="row">  
+            <div class="col-sm">
+                <table class="table table-sm table-warning" id="tbPaciente">
+                    <thead>
+                    <tr>
+                    <th class="bg-warning">COD. PACI.</th>
+                    <th class="bg-warning">NOME</th>
+                    <th class="bg-warning">CPF</th>
+                    </tr>
+                    </thead>
+                    <tbody id="tbPaciente">
+							
+					</tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+   
+    <script src="pessoa.js"></script>
+    <script src="paciente.js"></script>
+    <script src="funcionario.js"></script>
+    <script src="medico.js"></script>
+    <script src="enfermeiro.js"></script>
+    <script src="hospital.js"></script>
+    <script src="implementa.js"></script>
+</body>
+</html>
